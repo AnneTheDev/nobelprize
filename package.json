@@ -1,7 +1,7 @@
 {
   "name": "nobelprizeparser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nobel Priz data parser",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
