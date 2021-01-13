@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Anne <AnneTheDev@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
