@@ -1,11 +1,8 @@
 name: release
 
 on:
-  workflow_dispatch:
-    inputs:
-      npm_token:
-        description: 'npm access token'
-        required: true
+  release:
+    types: [published]
 
 jobs:
   publish:
@@ -17,5 +14,5 @@ jobs:
           node-version: 14
       - name: Publish
         run: |
-          npm config set //registry.npmjs.org/:_authToken ${{ github.event.inputs.npm_token }}
+          npm config set //registry.npmjs.org/:_authToken $(cat NPM_TOKEN_FILE)
           npm publish --ignore-scripts
